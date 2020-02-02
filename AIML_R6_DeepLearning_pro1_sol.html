@@ -13115,7 +13115,7 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
@@ -13128,7 +13128,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -13142,7 +13142,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tf</span><span class="o">.</span><span class="n">set_random_seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
@@ -13155,7 +13155,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[113]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tf</span><span class="o">.</span><span class="n">__version__</span>
@@ -13171,13 +13171,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[113]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;1.15.0&#39;</pre>
+<pre>&#39;2.1.0&#39;</pre>
 </div>
 
 </div>
@@ -13209,7 +13209,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">keras</span>
@@ -13219,13 +13219,31 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>Using TensorFlow backend.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;/content/bank.csv&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;bank.csv&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13235,7 +13253,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[251]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -13251,7 +13269,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[251]:</div>
+    <div class="prompt output_prompt">Out[10]:</div>
 
 
 
@@ -13389,7 +13407,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -13445,7 +13463,7 @@ memory usage: 1.1+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;RowNumber&#39;</span><span class="p">,</span><span class="s1">&#39;Surname&#39;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -13458,7 +13476,7 @@ memory usage: 1.1+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="k">import</span> <span class="n">LabelEncoder</span>
@@ -13472,7 +13490,7 @@ memory usage: 1.1+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Geography&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">lr</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Geography&#39;</span><span class="p">])</span>
@@ -13485,7 +13503,7 @@ memory usage: 1.1+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Gender&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">lr</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Gender&#39;</span><span class="p">])</span>
@@ -13498,7 +13516,7 @@ memory usage: 1.1+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[151]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -13514,7 +13532,7 @@ memory usage: 1.1+ MB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[151]:</div>
+    <div class="prompt output_prompt">Out[16]:</div>
 
 
 
@@ -13595,7 +13613,7 @@ memory usage: 1.1+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">df1</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
@@ -13611,7 +13629,7 @@ memory usage: 1.1+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">shape</span>
@@ -13627,7 +13645,7 @@ memory usage: 1.1+ MB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt output_prompt">Out[18]:</div>
 
 
 
@@ -13644,7 +13662,7 @@ memory usage: 1.1+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
@@ -13817,36 +13835,13 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[75]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip install imblearn
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Requirement already satisfied: imblearn in /usr/local/lib/python3.6/dist-packages (0.0)
-Requirement already satisfied: imbalanced-learn in /usr/local/lib/python3.6/dist-packages (from imblearn) (0.4.3)
-Requirement already satisfied: scipy&gt;=0.13.3 in /usr/local/lib/python3.6/dist-packages (from imbalanced-learn-&gt;imblearn) (1.4.1)
-Requirement already satisfied: numpy&gt;=1.8.2 in /usr/local/lib/python3.6/dist-packages (from imbalanced-learn-&gt;imblearn) (1.17.5)
-Requirement already satisfied: scikit-learn&gt;=0.20 in /usr/local/lib/python3.6/dist-packages (from imbalanced-learn-&gt;imblearn) (0.22.1)
-Requirement already satisfied: joblib&gt;=0.11 in /usr/local/lib/python3.6/dist-packages (from scikit-learn&gt;=0.20-&gt;imbalanced-learn-&gt;imblearn) (0.14.1)
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -31243,7 +31238,7 @@ kiRJBjD/D0WKOW2q/N26AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span><span class="o">=</span><span class="n">df1</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;Exited&#39;</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -31256,7 +31251,7 @@ kiRJBjD/D0WKOW2q/N26AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="k">import</span> <span class="n">MinMaxScaler</span>
@@ -31269,7 +31264,7 @@ kiRJBjD/D0WKOW2q/N26AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">scaler</span><span class="o">=</span><span class="n">MinMaxScaler</span><span class="p">()</span>
@@ -31308,7 +31303,7 @@ kiRJBjD/D0WKOW2q/N26AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span><span class="o">=</span><span class="n">df1</span><span class="p">[</span><span class="s2">&quot;Exited&quot;</span><span class="p">]</span>
@@ -31321,7 +31316,7 @@ kiRJBjD/D0WKOW2q/N26AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;int32&#39;</span><span class="p">)</span>
@@ -31334,7 +31329,7 @@ kiRJBjD/D0WKOW2q/N26AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">)</span>
@@ -31347,7 +31342,7 @@ kiRJBjD/D0WKOW2q/N26AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[232]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span><span class="o">.</span><span class="n">dtypes</span>
@@ -31363,7 +31358,7 @@ kiRJBjD/D0WKOW2q/N26AAAAAElFTkSuQmCC
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[232]:</div>
+    <div class="prompt output_prompt">Out[28]:</div>
 
 
 
@@ -31380,10 +31375,10 @@ kiRJBjD/D0WKOW2q/N26AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">train_test_split</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#from sklearn.model_selection import train_test_split</span>
 </pre></div>
 
     </div>
@@ -31393,108 +31388,13 @@ kiRJBjD/D0WKOW2q/N26AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[283]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[283]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>CustomerId</th>
-      <th>CreditScore</th>
-      <th>Geography</th>
-      <th>Gender</th>
-      <th>Age</th>
-      <th>Tenure</th>
-      <th>Balance</th>
-      <th>NumOfProducts</th>
-      <th>HasCrCard</th>
-      <th>IsActiveMember</th>
-      <th>EstimatedSalary</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>15634602</td>
-      <td>619</td>
-      <td>0</td>
-      <td>0</td>
-      <td>42</td>
-      <td>2</td>
-      <td>0.00</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>101348.88</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>15647311</td>
-      <td>608</td>
-      <td>2</td>
-      <td>0</td>
-      <td>41</td>
-      <td>1</td>
-      <td>83807.86</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>112542.58</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>15619304</td>
-      <td>502</td>
-      <td>0</td>
-      <td>0</td>
-      <td>42</td>
-      <td>8</td>
-      <td>159660.80</td>
-      <td>3</td>
-      <td>1</td>
-      <td>0</td>
-      <td>113931.57</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -32448,10 +32348,10 @@ sample_data
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">classification_report</span><span class="p">,</span><span class="n">accuracy_score</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">classification_report</span><span class="p">,</span><span class="n">accuracy_score</span><span class="p">,</span><span class="n">confusion_matrix</span>
 </pre></div>
 
     </div>
@@ -32530,7 +32430,7 @@ sample_data
 <div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">confusion_matrix</span><span class="p">(</span><span class="n">test_y</span><span class="p">,</span><span class="n">pred</span><span class="p">)</span>
 </pre></div>
 
     </div>
